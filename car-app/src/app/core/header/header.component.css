@@ -1,0 +1,27 @@
+/*-- header area --*/
+
+/*--------------------------------------------------------------------- top banner area ---------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
+
+.header {
+    width: 100%;
+    background: #fff;
+    padding: 20px 30px;
+}
+
+.logo a {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 40px;
+}
+
+.auth-buttons {
+    display: flex;
+}
+
+.sign_btn {
+    margin-right: 10px; /* Adjust spacing between buttons */
+}
