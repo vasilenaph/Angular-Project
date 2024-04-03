@@ -10,8 +10,9 @@ import { CarModule } from './car/car.module';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AboutComponent } from './about/about.component';
-import { TopicsComponent } from './topics/topic-list/topics.component';
 import { TopicModule } from './topics/topic.module';
+import { AppInterceptorProvider } from './app.interceptor';
+import { AuthenticateComponent } from './authenticate/authenticate.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { TopicModule } from './topics/topic.module';
     HomeComponent,
     NotFoundComponent,
     AboutComponent,
+    AuthenticateComponent,
   ],
   imports: [
     BrowserModule,
