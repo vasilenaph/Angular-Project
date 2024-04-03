@@ -6,9 +6,8 @@ import { AddCarComponent } from './add-car/add-car.component';
 import { CarsListComponent } from './cars-list/cars-list.component';
 import { CarRoutingModule } from './car-routing.module';
 import { SharedModule } from '../shared/shared.module';
-import { TopicsComponent } from './topics/topics.component';
 import { RentComponent } from './rent/rent.component';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +15,13 @@ import { RentComponent } from './rent/rent.component';
     AddCarComponent,
     MainComponent,
     CarsListComponent,
-    TopicsComponent,
-    RentComponent
+    RentComponent,
   ],
   imports: [
     CommonModule,
     CarRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ]
 })
 export class CarModule { }

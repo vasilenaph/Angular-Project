@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="titlepage">
+                <h2>DISCOVER AUTOMOTIVE INSIGHTS</h2>
+                <span>Dive into the World of Automotive Knowledge</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="topic" *ngFor="let topic of topics">
+            <div class="car_box">
+                <figure><img src="{{topic.imageUrl}}" alt="Car 1"></figure>
+                <h3>{{topic.title}}</h3>
+                <p class="short-description">{{topic.content}}</p>
+                <a [routerLink]="topic._id" class="read-more-link">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>

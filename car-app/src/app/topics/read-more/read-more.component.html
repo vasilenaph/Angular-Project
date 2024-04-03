@@ -1,0 +1,18 @@
+<div class="content-frame">
+    <div class="container">
+        <h1>{{topic.title}}</h1>
+        <img src="{{topic.imageUrl}}"
+            alt="Topic Image">
+        <div class="content">
+            <p>
+                {{topic.content}}
+            </p>
+            
+            <!-- Comment Form -->
+            <form class="comment-form">
+                <textarea name="comment" id="comment" rows="4" placeholder="Add your comment here..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

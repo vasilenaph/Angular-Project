@@ -1,0 +1,92 @@
+.profile-container {
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 20px; /* Increase padding-bottom */
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Profile Info section */
+.profile-info {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.profile-picture {
+    margin-right: 20px;
+}
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.user-details {
+    flex: 1;
+}
+
+.user-details h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 24px;
+}
+
+.user-details p {
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+}
+
+/* Add button styles */
+.user-details .buttons {
+    margin-top: 10px;
+}
+
+.user-details .buttons button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.user-details .buttons button.edit {
+    background-color: #f6d601;
+    color: #fff;
+}
+
+.user-details .buttons button:hover {
+    filter: brightness(85%);
+}
+
+/* Edit fields */
+.edit-fields {
+    display: none; /* Initially hidden */
+}
+
+.edit-fields label,
+.edit-fields input,
+.edit-fields button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.edit-fields button {
+    background-color: #f6d601;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.edit-fields button:hover {
+    filter: brightness(85%);
+}

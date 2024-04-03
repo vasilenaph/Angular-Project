@@ -10,44 +10,16 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4" *ngFor="let car of cars">
                 <ul class="car-column">
                     <li class="car-item">
                         <div class="car_box">
-                            <figure><img src="/assets/images/car_img1.png" alt="#" /></figure>
-                            <h3>Hyundai</h3>
+                            <figure><img src="{{car.imageUrl}}" alt="#" /></figure>
+                            <h3>{{car.carName}}</h3>
                         </div>
                         <div class="button-group">
-                            <a href="/cars/:carId" class="details-link">Details</a>
+                            <a [routerLink]="car._id" class="details-link">Details</a>
                             <a href="/cars/:carId/rent" class="rent-now-button">Rent Now</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <ul class="car-column">
-                    <li class="car-item">
-                        <div class="car_box">
-                            <figure><img src="/assets/images/car_img2.png" alt="#" /></figure>
-                            <h3>Audi</h3>
-                        </div>
-                        <div class="button-group">
-                            <a href="/details/audi" class="details-link">Details</a>
-                            <a href="#" class="rent-now-button">Rent Now</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <ul class="car-column">
-                    <li class="car-item">
-                        <div class="car_box">
-                            <figure><img src="/assets/images/car_img3.png" alt="#" /></figure>
-                            <h3>Bmw x5</h3>
-                        </div>
-                        <div class="button-group">
-                            <a routerLink="/cars/:carId" class="details-link">Details</a>
-                            <a href="#" class="rent-now-button">Rent Now</a>
                         </div>
                     </li>
                 </ul>

@@ -1,10 +1,8 @@
-/* Add this CSS to your existing stylesheet */
-
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .text-bg {
@@ -29,11 +27,6 @@
     box-sizing: border-box;
 }
 
-.d_flex {
-    display: flex;
-    flex-direction: column; /* Arrange items in a column */
-}
-
 .login p {
     color: #000; /* Change paragraph text color */
     font-size: 17px;
@@ -41,12 +34,15 @@
     margin-top: 20px;
 }
 
-.register a {
-    color: #000000;
+.login p a{
+    color: #000; /* Change paragraph text color */
+    text-decoration: underline;
+    background-color: #fff;
 }
+/* Style the register link */
 
-/* Update the style for the "Create Account" button */
-button {
+
+.login-btn {
     font-family: 'Righteous', cursive;
     font-size: 17px;
     background-color: #f6d601;
@@ -59,11 +55,12 @@ button {
     transition: ease-in all 0.5s;
     margin: 5px;
     border: none;
-    border-radius: 5px; /* Add border radius */
+    border-radius: 45px; 
 }
 
-button:hover {
+.login-btn:hover {
     background-color: #ffdb4d;
     color: #000;
     transition: ease-in all 0.5s;
 }
+
